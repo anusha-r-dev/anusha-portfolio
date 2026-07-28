@@ -3,6 +3,9 @@
 A responsive personal portfolio for showcasing software development projects,
 technical skills, engineering values, and professional growth.
 
+## Live Portfolio
+🌐 [View the published portfolio](https://anusha-r-dev.github.io/anusha-portfolio/)
+
 ## Highlights
 
 - Formal, recruiter-focused responsive design
