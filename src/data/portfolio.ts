@@ -10,6 +10,23 @@ const assetUrl = (fileName: string) =>
 
 export const projects: Project[] = [
   {
+    title: 'CareerPilot',
+    category: 'Featured Project · Full-Stack Application',
+    year: '2026',
+    description:
+      'A production-deployed, multi-user job application platform for discovering opportunities and privately tracking each application from saved role to offer.',
+    image: assetUrl('careerpilot-project.png'),
+    tags: ['React', 'TypeScript', 'Ruby on Rails', 'PostgreSQL'],
+    highlights: [
+      'Separate member and administrator experiences with role-based access',
+      'Persistent job pipeline, interviews, portal links and account management',
+      'REST API, secure cookie sessions, automated tests and Render deployment',
+    ],
+    liveUrl: 'https://careerpilot-qdr0.onrender.com/',
+    repositoryUrl:
+      'https://github.com/anusha-r-dev/careerpilot-platform',
+  },
+  {
     title: 'Accessible Clinical Results Dashboard',
     category: 'Featured Project · Healthcare Interface',
     year: '2026',
@@ -33,6 +50,7 @@ export const projects: Project[] = [
     year: '2026',
     description:
       'A professional, responsive portfolio designed to present my projects, technical skills and engineering approach clearly to recruiters.',
+    image: assetUrl('portfolio-project.png'),
     tags: ['React', 'TypeScript', 'Responsive design', 'CSS'],
     highlights: [
       'Reusable, section-based React component architecture',
