@@ -37,55 +37,69 @@ function ProjectsSection() {
       />
 
       <div className="projects__list">
-        {projects.map((project, index) => (
-          <article
-            className={
-              index === 0
-                ? 'project-card project-card--featured'
-                : 'project-card project-card--editorial'
-            }
-            key={project.title}
-          >
-            <div className="project-card__visual">
-              {project.image ? (
-                <img
-                  src={project.image}
-                  alt={`${project.title} project interface`}
-                />
-              ) : (
-                <div className="project-card__monogram" aria-hidden="true">
-                  <span>AR</span>
-                  <small>Software Developer Portfolio</small>
-                </div>
-              )}
-              <span className="project-card__number">Project 0{index + 1}</span>
-            </div>
+        {projects.map((project, index) => {
+          const projectInitials = project.title
+            .split(/\s+/)
+            .map((word) => word[0])
+            .join('')
+            .slice(0, 2)
+            .toUpperCase()
 
-            <div className="project-card__content">
-              <div className="project-card__meta">
-                <span>{project.category}</span>
-                <span>{project.year}</span>
+          return (
+            <article
+              className={
+                index === 0
+                  ? 'project-card project-card--featured'
+                  : 'project-card project-card--editorial'
+              }
+              key={project.title}
+            >
+              <div className="project-card__visual">
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={`${project.title} project interface`}
+                  />
+                ) : (
+                  <div className="project-card__monogram" aria-hidden="true">
+                    <span>{projectInitials}</span>
+                    <small>{project.title}</small>
+                  </div>
+                )}
+                <span className="project-card__number">
+                  Project 0{index + 1}
+                </span>
               </div>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
 
-              <ul className="project-card__highlights">
-                {project.highlights.map((highlight) => (
-                  <li key={highlight}>{highlight}</li>
-                ))}
-              </ul>
+              <div className="project-card__content">
+                <div className="project-card__meta">
+                  <span>{project.category}</span>
+                  <span>{project.year}</span>
+                </div>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
 
-              <div className="project-card__footer">
-                <ul className="tag-list" aria-label={`${project.title} technologies`}>
-                  {project.tags.map((tag) => (
-                    <li key={tag}>{tag}</li>
+                <ul className="project-card__highlights">
+                  {project.highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
                   ))}
                 </ul>
-                <ProjectLinks project={project} />
+
+                <div className="project-card__footer">
+                  <ul
+                    className="tag-list"
+                    aria-label={`${project.title} technologies`}
+                  >
+                    {project.tags.map((tag) => (
+                      <li key={tag}>{tag}</li>
+                    ))}
+                  </ul>
+                  <ProjectLinks project={project} />
+                </div>
               </div>
-            </div>
-          </article>
-        ))}
+            </article>
+          )
+        })}
       </div>
     </section>
   )
