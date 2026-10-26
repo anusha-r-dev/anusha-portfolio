@@ -7,14 +7,14 @@ function HeroSection() {
           Open to Remote Software Engineering Roles
         </div>
 
-        <p className="hero__intro">Anusha R · Software Engineer</p>
+        <p className="hero__intro">Anusha R · Full-Stack Engineer</p>
         <h1 id="hero-title">
-          Building reliable enterprise and healthcare applications.
+          Building reliable full-stack applications for complex workflows.
         </h1>
         <p className="hero__summary">
-          Software engineer with 4 years of experience across frontend and
-          full-stack development using React, TypeScript, Ruby on Rails and
-          REST APIs.
+          Full-stack engineer with 4 years of experience building clinical web
+          applications using React, TypeScript, advanced JavaScript, HTML and
+          CSS, Ruby on Rails, PostgreSQL and REST APIs.
         </p>
 
         <div className="hero__actions">
@@ -29,12 +29,19 @@ function HeroSection() {
           >
             GitHub Profile <span aria-hidden="true">↗</span>
           </a>
+          <a
+            className="button button--secondary"
+            href={`${import.meta.env.BASE_URL}Anusha_R_Resume_Public.pdf`}
+            download
+          >
+            Download Resume <span aria-hidden="true">↓</span>
+          </a>
         </div>
 
         <ul className="hero__highlights" aria-label="Professional highlights">
           <li>4 years of experience</li>
-          <li>React + TypeScript + Ruby</li>
-          <li>Healthcare domain</li>
+          <li>392 delivered work items</li>
+          <li>Promoted to Engineer II</li>
         </ul>
       </div>
 
@@ -44,7 +51,7 @@ function HeroSection() {
           <span aria-hidden="true">AR</span>
           <div>
             <h2>Anusha R</h2>
-            <p>Application Software Engineer</p>
+            <p>Application Software Engineer II</p>
           </div>
         </div>
         <dl>
@@ -54,7 +61,7 @@ function HeroSection() {
           </div>
           <div>
             <dt>Core technologies</dt>
-            <dd>React · TypeScript · Ruby on Rails</dd>
+            <dd>React · TypeScript · Rails · PostgreSQL</dd>
           </div>
           <div>
             <dt>Domain</dt>

@@ -5,33 +5,32 @@ function AboutSection() {
     <section className="about section-shell" id="about">
       <SectionHeading
         eyebrow="Professional Summary"
-        title="Software engineering experience across frontend, APIs and enterprise healthcare workflows."
-        description="I combine user-focused frontend development with practical full-stack delivery and domain-aware problem solving."
+        title="Full-stack engineering across frontend, APIs and enterprise healthcare workflows."
+        description="I combine user-focused frontend development, secure backend delivery and domain-aware problem solving."
       />
 
       <div className="about__grid">
         <div className="about__body">
           <p>
             At Oracle Health, I build and maintain enterprise healthcare
-            applications across clinical data, patient context, consent,
-            privacy and interoperability workflows. My experience includes
-            frontend development, REST API integration and Ruby on Rails service
-            work.
+            applications across five clinical portfolios involving patient
+            context, consent, privacy and interoperability. My work spans React
+            interfaces, REST and FHIR services, Ruby on Rails and PostgreSQL.
           </p>
           <p>
             I contribute throughout the development lifecycle: requirements
-            analysis, implementation, unit testing, accessibility,
-            internationalization, code review, security remediation, CI/CD,
-            release validation and production issue investigation.
+            analysis, implementation, automated testing, accessibility,
+            authentication, security remediation, CI/CD, release validation and
+            production issue investigation.
           </p>
         </div>
         <aside className="about__strengths">
           <h3>What I bring</h3>
           <ul>
-            <li>Clear, maintainable component architecture</li>
-            <li>Healthcare data integrity, privacy and auditability</li>
-            <li>Accessibility, WCAG and internationalization awareness</li>
-            <li>Structured Agile, Git, code review and CI/CD practices</li>
+            <li>End-to-end ownership across React UI, APIs and data</li>
+            <li>Healthcare data integrity, privacy and FHIR interoperability</li>
+            <li>Accessibility, authentication and web security</li>
+            <li>Automated testing, code review and CI/CD delivery</li>
           </ul>
         </aside>
       </div>
@@ -39,15 +38,15 @@ function AboutSection() {
       <dl className="about__facts">
         <div>
           <dt>Frontend</dt>
-          <dd>React, Redux, TypeScript, JavaScript</dd>
+          <dd>React, Next.js, JavaScript, HTML5, CSS3</dd>
         </div>
         <div>
           <dt>Quality</dt>
-          <dd>Jest, RSpec, WCAG, code review</dd>
+          <dd>Jest, RSpec, Minitest, WCAG</dd>
         </div>
         <div>
           <dt>Workflow</dt>
-          <dd>Jira, Git, Jenkins, Agile/Scrum</dd>
+          <dd>GitHub Actions, Jenkins, Docker, Agile</dd>
         </div>
       </dl>
     </section>
