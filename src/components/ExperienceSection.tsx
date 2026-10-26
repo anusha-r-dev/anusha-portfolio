@@ -13,8 +13,8 @@ function ExperienceSection() {
     <section className="experience section-shell" id="experience">
       <SectionHeading
         eyebrow="Professional Experience"
-        title="Enterprise healthcare engineering with measurable responsibility."
-        description="Four years of experience contributing to complex, privacy-sensitive applications and multidisciplinary delivery workflows."
+        title="Promoted engineering responsibility backed by measurable delivery."
+        description="Four years of full-stack experience across privacy-sensitive clinical products, security modernization and production support."
       />
 
       <article className="experience-card">
@@ -22,6 +22,9 @@ function ExperienceSection() {
           <div>
             <p>{experience.company}</p>
             <h3>{experience.role}</h3>
+            <span className="experience-card__promotion">
+              Promoted from Level 1
+            </span>
           </div>
           <span>{experience.dates}</span>
         </div>

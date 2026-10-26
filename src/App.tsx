@@ -3,6 +3,7 @@ import AboutSection from './components/AboutSection'
 import ContactSection from './components/ContactSection'
 import ExperienceSection from './components/ExperienceSection'
 import HeroSection from './components/HeroSection'
+import ImpactSection from './components/ImpactSection'
 import ProcessSection from './components/ProcessSection'
 import ProjectsSection from './components/ProjectsSection'
 import SiteFooter from './components/SiteFooter'
@@ -19,6 +20,7 @@ function App() {
       <main id="main-content">
         <HeroSection />
         <AboutSection />
+        <ImpactSection />
         <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />

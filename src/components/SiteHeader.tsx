@@ -4,6 +4,10 @@ const navigation = [
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#work' },
   { label: 'Skills', href: '#skills' },
+  {
+    label: 'Resume',
+    href: `${import.meta.env.BASE_URL}Anusha_R_Resume_Public.pdf`,
+  },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -20,7 +24,7 @@ function SiteHeader() {
         </span>
         <span className="brand__name">
           Anusha R
-          <small>Software Engineer</small>
+          <small>Full-Stack Engineer</small>
         </span>
       </a>
 
@@ -43,7 +47,13 @@ function SiteHeader() {
         aria-label="Primary navigation"
       >
         {navigation.map((item) => (
-          <a key={item.href} href={item.href} onClick={closeMenu}>
+          <a
+            key={item.href}
+            href={item.href}
+            target={item.label === 'Resume' ? '_blank' : undefined}
+            rel={item.label === 'Resume' ? 'noreferrer' : undefined}
+            onClick={closeMenu}
+          >
             {item.label}
           </a>
         ))}

@@ -1,19 +1,22 @@
-# Anusha R — Developer Portfolio
+# Anusha R — Full-Stack Engineer Portfolio
 
 A responsive personal portfolio for showcasing software development projects,
 technical skills, engineering values, and professional growth.
 
 ## Live Portfolio
+
 🌐 [View the published portfolio](https://anusha-r-dev.github.io/anusha-portfolio/)
 
 ## Highlights
 
 - Formal, recruiter-focused responsive design
 - Clear professional positioning and technical summary
-- Resume-based professional experience and education
+- Promoted Application Software Engineer II role and quantified career impact
 - Full-stack technical skills and enterprise delivery workflows
+- Advanced JavaScript, HTML5, and CSS3 experience
+- Sanitized downloadable resume without a public phone number
 - Accessible navigation and semantic page structure
-- Featured project case study with live and source links
+- Four featured projects with live and source links
 - Data-driven project, skills, and process content
 - Mobile navigation with clear keyboard behavior
 - Visible focus styles and reduced-motion support

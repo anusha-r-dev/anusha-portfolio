@@ -10,6 +10,22 @@ const assetUrl = (fileName: string) =>
 
 export const projects: Project[] = [
   {
+    title: 'Ramwell Store',
+    category: 'Featured Project · Full-Stack E-Commerce',
+    year: '2026',
+    description:
+      'A performance-focused e-commerce experience with a large typed catalog, optimized product discovery and a complete client-side shopping journey.',
+    image: assetUrl('ramwell-store-project.png'),
+    tags: ['Next.js', 'React', 'TypeScript', 'Node.js'],
+    highlights: [
+      'Virtualized catalog with debounced search, filtering and sorting',
+      'Dynamic product pages, responsive images and code-split content',
+      'Saved items, bag management, checkout and order confirmation flow',
+    ],
+    liveUrl: 'https://ramwell-store.vercel.app/',
+    repositoryUrl: 'https://github.com/anusha-r-dev/ramwell-store',
+  },
+  {
     title: 'CareerPilot',
     category: 'Featured Project · Full-Stack Application',
     year: '2026',
@@ -66,11 +82,12 @@ export const skillGroups: SkillGroup[] = [
     index: '01',
     title: 'Languages',
     skills: [
-      'JavaScript (ES6+)',
+      'JavaScript (Advanced)',
       'TypeScript',
       'Ruby',
-      'HTML5',
-      'CSS3',
+      'HTML5 (Advanced)',
+      'CSS3 (Advanced)',
+      'Tailwind CSS',
       'SQL',
     ],
   },
@@ -79,7 +96,8 @@ export const skillGroups: SkillGroup[] = [
     title: 'Frameworks & Runtime',
     skills: [
       'React',
-      'Redux',
+      'Next.js',
+      'Redux Toolkit',
       'Ruby on Rails',
       'Node.js',
     ],
@@ -90,11 +108,12 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       'Jest',
       'RSpec',
+      'Minitest',
       'Unit testing',
+      'Integration testing',
       'WCAG',
-      'Accessibility',
-      'Code review',
-      'Internationalization',
+      'ESLint',
+      'SonarQube',
     ],
   },
   {
@@ -103,10 +122,13 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       'Git',
       'Jenkins',
+      'GitHub Actions',
+      'Docker',
       'Splunk',
       'Postman',
+      'Render',
+      'Vercel',
       'Jira',
-      'Agile / Scrum',
       'CI/CD',
     ],
   },
@@ -116,10 +138,11 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       'REST APIs',
       'FHIR',
+      'PostgreSQL',
+      'Authentication',
+      'Role-based access control',
       'Healthcare workflows',
-      'Consent & privacy',
-      'Data integrity',
-      'Auditability',
+      'Web security',
     ],
   },
 ]
@@ -152,26 +175,26 @@ export const processSteps: ProcessStep[] = [
 ]
 
 export const experience: Experience = {
-  company: 'Oracle Health (formerly Cerner)',
-  role: 'Application Software Engineer',
+  company: 'Oracle Cerner',
+  role: 'Application Software Engineer II',
   dates: 'September 2022 – Present',
   summary:
-    'Build and maintain enterprise healthcare applications with a focus on clinical data integrity, privacy, accessibility, interoperability, security and release quality.',
+    'Build React and TypeScript frontends with Ruby on Rails, FHIR and PostgreSQL services for hospital clinical products, supporting feature delivery across complex workflows.',
   highlights: [
-    'Deliver frontend and full-stack enhancements using React, TypeScript, JavaScript, Ruby on Rails and REST APIs.',
-    'Improve healthcare workflows involving clinical data integrity, patient context, consent, privacy and auditability.',
-    'Contribute to accessibility, internationalization, security remediation, testing, code review and release validation.',
-    'Investigate production issues, analyze application behavior and improve reliability across complex clinical experiences.',
+    'Owned end-to-end delivery across 5 clinical portfolios, translating requirements into maintainable React UI, REST API and PostgreSQL solutions.',
+    'Resolved 67 high/critical-priority issues across frontend, backend and third-party FHIR integrations.',
+    'Modernized 5 Ruby services to Ruby 3.4 and Rails 8 while remediating 50+ tracked security vulnerabilities.',
+    'Rebuilt allergy data flows across 3 clinical applications and improved precision, provenance, duplicate detection and audit metadata.',
   ],
   technologies: [
     'React',
     'TypeScript',
-    'Redux',
     'Ruby on Rails',
     'REST APIs',
+    'FHIR',
+    'PostgreSQL',
     'Jest',
     'RSpec',
     'Jenkins',
-    'Jira',
   ],
 }
